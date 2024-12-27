@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Mentorship Opportunities</h2>
+<ul>
+    {% for mentor in mentors %}
+    <li>
+        <h3>{{ mentor.name }}</h3>
+        <p>Expertise: {{ mentor.expertise }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

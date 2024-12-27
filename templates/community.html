@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Community Board</h2>
+{% for post in posts %}
+<section>
+    <h3>Post by {{ post.author }}</h3>
+    <p>{{ post.content }}</p>
+</section>
+{% endfor %}
+{% endblock %}
+

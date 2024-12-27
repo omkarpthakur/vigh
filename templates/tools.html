@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Tools for Optimization</h2>
+<ul>
+    {% for tool in tools %}
+    <li>{{ tool }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
